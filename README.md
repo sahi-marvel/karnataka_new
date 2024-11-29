@@ -3,17 +3,17 @@
     <img src="https://github.com/swapnilsparsh/MysuruTourism/blob/master/img/Readme%20Image.png" >
   </a>
 
-  <h3 align="center">Mysuru Tourism Website</h3>
+  <h3 align="center">Karnataka Tourism Website</h3>
 
   <p align="center">
-    A simple responsive website which is made for Mysuru Tourism, Karnataka ✈
+    A simple responsive website which is made for  Karnataka ✈
     <br />
     
   </p>
 </p>
 
 # About 
-This Website was made under DSC WoW Hackathon which was of 48hrs for Mysuru Tourism Track.
+This Website was made under DSC WoW Hackathon which was of 48hrs for Karnataka Tourism Track.
 
 # Technology Stack
 <ol>
