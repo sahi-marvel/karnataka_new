@@ -19,6 +19,7 @@ This Website was made under DSC WoW Hackathon which was of 48hrs for Karnataka T
 <ol>
   <li>HTML5</li>
   <li>CSS3</li>
+  <li>chatbot</li>
   
 </ol>
 
