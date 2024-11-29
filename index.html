@@ -4,60 +4,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karnataka Tourism</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Karnataka Tours</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to Karnataka Tourism</h1>
-        <nav>
-            <ul>
-                <li><a href="#bengaluru">Bengaluru</a></li>
-                <li><a href="#hampi">Hampi</a></li>
-                <li><a href="#coorg">Coorg</a></li>
-                <li><a href="#udupi">Udupi</a></li>
-                <li><a href="#chikmagalur">Chikmagalur</a></li>
-            </ul>
-        </nav>
-    </header>
 
+    <!-- Main Section -->
     <main>
-        <section id="bengaluru">
-            <h2>Bengaluru</h2>
-            <p>The bustling capital of Karnataka, known for its gardens, nightlife, and tech hubs.</p>
-            <img src="img/bengaluru.jpg" alt="Bengaluru City">
+
+        <!-- Tour Section -->
+        <section class="section-tour" id="section-tour">
+            <div class="row">
+
+                <!-- card 1 (Winter) -->
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-side card-side-front">
+                            <div class="card-picture card-picture-1">
+                                &nbsp;
+                            </div>
+
+                            <h4 class="card-heading">
+                                <span class="card-heading-span card-heading-span-1">
+                                    Winter Season
+                                </span>
+                            </h4><br>
+
+                            <div class="card-details">
+                                <ul>
+                                    <li>Coorg</li>
+                                    <li>Chikmagalur</li>
+                                    <li>Agumbe</li>
+                                    <li>Gokarna</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-side card-side-back card-side-back-1">
+                            <div class="card-cal">
+                                <div class="card-detail-box">
+                                    <p class="card-detail-only">Cool Weather</p>
+                                    <p class="card-detail-value">Average Temp 18°C</p>
+                                </div>
+                                <a href="#popup" class="btn btn-white">Details!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 (Summer) -->
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-side card-side-front">
+                            <div class="card-picture card-picture-1">
+                                &nbsp;
+                            </div>
+
+                            <h4 class="card-heading">
+                                <span class="card-heading-span card-heading-span-2">
+                                    Summer Season
+                                </span>
+                            </h4><br>
+
+                            <div class="card-details">
+                                <ul>
+                                    <li>Hampi</li>
+                                    <li>Badami</li>
+                                    <li>Bijapur</li>
+                                    <li>Ramanagaram</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-side card-side-back card-side-back-2">
+                            <div class="card-cal">
+                                <div class="card-detail-box">
+                                    <p class="card-detail-only">Hot Days</p>
+                                    <p class="card-detail-value">Highest Temp 38.4°C</p>
+                                </div>
+                                <a href="#popup2" class="btn btn-white">Details!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 (Rainy) -->
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-side card-side-front">
+                            <div class="card-picture card-picture-2">
+                                &nbsp;
+                            </div>
+
+                            <h4 class="card-heading">
+                                <span class="card-heading-span card-heading-span-3">
+                                    Rainy Season
+                                </span>
+                            </h4><br>
+
+                            <div class="card-details">
+                                <ul>
+                                    <li>Western Ghats</li>
+                                    <li>Kabini Wildlife Sanctuary</li>
+                                    <li>Sakleshpur</li>
+                                    <li>Murudeshwar</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-side card-side-back card-side-back-3">
+                            <div class="card-cal">
+                                <div class="card-detail-box">
+                                    <p class="card-detail-only">Rainy Days</p>
+                                    <p class="card-detail-value">Average annual rainfall 1500 mm</p>
+                                </div>
+                                <a href="#popup3" class="btn btn-white">Details!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="center-text margin-top-big1">
+                <a href="index2.html" class="btn btn-purple">Discover all tours</a>
+            </div>
         </section>
 
-        <section id="hampi">
-            <h2>Hampi</h2>
-            <p>A UNESCO World Heritage site, Hampi is famous for its ancient ruins and temples.</p>
-            <img src="img/hampi.jpg" alt="Hampi Ruins">
+        <!-- Testimonial Section -->
+        <section class="section-testimonial" id="section-testimonial">
+            <div class="bak">
+                <div class="center-text margin-bottom-big">
+                    <h2 class="heading-sec1">
+                        Testimonial
+                    </h2>
+                </div>
+
+                <!-- Testimonial 1 -->
+                <div class="row">
+                    <div class="testimonial">
+                        <figure class="testimonial-shape">
+                            <img class="testimonial-img" src="img/nat-8.jpg" alt="Person">
+                            <figcaption class="testimonial-caption">
+                                Rohan Kumar
+                            </figcaption>
+                        </figure>
+                        <div class="testimonial-text">
+                            <h3 class="heading-text1 margin-bottom-small bsdk ">Neha</h3>
+                            <p class="paragraph1">
+                                Coorg is truly a mesmerizing place. The coffee plantations and scenic hills make it perfect for a relaxing holiday. The weather is just amazing, especially in winter.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="row">
+                    <div class="testimonial1">
+                        <figure class="testimonial-shape">
+                            <img class="testimonial-img" src="img/nat-9.jpg" alt="Person">
+                            <figcaption class="testimonial-caption">
+                                Priya Singh
+                            </figcaption>
+                        </figure>
+                        <div class="testimonial-text">
+                            <h3 class="heading-text1 margin-bottom-small">Amit</h3>
+                            <p class="paragraph1">
+                                Gokarna is perfect for a peaceful beach holiday. The pristine beaches and peaceful environment make it ideal for spiritual seekers and nature lovers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="row">
+                    <div class="testimonial">
+                        <figure class="testimonial-shape">
+                            <img class="testimonial-img" src="img/nat-8.jpg" alt="Person">
+                            <figcaption class="testimonial-caption">
+                                Devika
+                            </figcaption>
+                        </figure>
+                        <div class="testimonial-text">
+                            <h3 class="heading-text1 margin-bottom-small">Karan</h3>
+                            <p class="paragraph1">
+                                The architecture and history of Hampi are incredible! It's a UNESCO World Heritage site, and the temples and ruins tell the stories of a bygone era.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="row">
+                    <div class="testimonial1">
+                        <figure class="testimonial-shape">
+                            <img class="testimonial-img" src="img/nat-9.jpg" alt="Person">
+                            <figcaption class="testimonial-caption">
+                                Arjun Verma
+                            </figcaption>
+                        </figure>
+                        <div class="testimonial-text">
+                            <h3 class="heading-text1 margin-bottom-small">Shreya</h3>
+                            <p class="paragraph1">
+                                The Western Ghats are breathtaking during the rainy season. If you love nature and adventure, this is the perfect place to explore with family and friends.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center-text margin-top-big">
+                    <a href="#" class="">.</a>
+                </div>
+            </div>
         </section>
 
-        <section id="coorg">
-            <h2>Coorg</h2>
-            <p>Known as the Scotland of India, Coorg offers lush greenery, coffee plantations, and waterfalls.</p>
-            <img src="img/coorg.jpg" alt="Coorg Scenery">
+        <!-- Booking Section -->
+        <section class="section-booking">
+            <div class="row">
+                <div class="book">
+                    <div class="book-form">
+                        <form action="#" class="form1">
+                            <div class="center-text margin-bottom-small">
+                                <h2 class="heading-sec">
+                                    Risk of corona!!
+                                </h2>
+                            </div>
+                            <ul>
+                                <li>Air travel requires spending time in security lines and airport terminals, which can bring you in close contact with other people and frequently touched surfaces.</li>
+                                <li>Traveling on buses and trains for any length of time can involve being in crowded terminals and sitting or standing within 6 feet of others, which may increase your risk of getting COVID-19.</li>
+                                <li>Making stops along the way for gas, food, or bathroom breaks can put you and your traveling companions in close contact with other people and frequently touched surfaces.</li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="udupi">
-            <h2>Udupi</h2>
-            <p>Famous for its temples, beaches, and delicious South Indian cuisine.</p>
-            <img src="img/udupi.jpg" alt="Udupi Temple">
-        </section>
-
-        <section id="chikmagalur">
-            <h2>Chikmagalur</h2>
-            <p>A haven for coffee lovers, with picturesque trekking routes and serene landscapes.</p>
-            <img src="img/chikmagalur.jpg" alt="Chikmagalur Hills">
-        </section>
     </main>
 
-    <footer>
-        <p>Explore more at the <a href="https://www.karnatakatourism.org" target="_blank">official Karnataka Tourism website</a>.</p>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-logo-box">
+            <img src="img/footer.png" alt="Logo" class="footer-logo">
+            <hr class="footer-liine">
+            <div class="footer-line">
+                Build and Copyright &copy; by Swapnil & Jatin 2024.
+            </div>
+        </div>
     </footer>
+
+    <!-- Popup Details for Winter -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <div class="popup-left">
+                <img src="img/coorg.jpg" alt="tour photo" class="popup-img">
+                <img src="img/chikmagalur.jpg" alt="tour photo" class="popup-img">
+            </div>
+            <div class="popup-right">
+                <a href="#section-tour" class="popup-close">&times;</a>
+                <h2 class="heading-sec">In Winter</h2>
+                <p class="popup-text">
+                    <strong>PROS</strong> <br> 1. Ideal weather for outdoor activities. <br> 2. Less crowded compared to other seasons. <br> <strong>CONS</strong><br> 1. Limited activities in remote areas during winters. <br> 2. Occasional chilly winds.
+                </p>
+                <a href="index2.html" class="btn btn-purple">Explore</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Details for Summer -->
+    <div class="popup2" id="popup2">
+        <div class="popup2-content">
+            <div class="popup2-left">
+                <img src="img/hampi.jpg" alt="tour photo" class="popup2-img">
+                <img src="img/badami.jpg" alt="tour photo" class="popup2-img">
+            </div>
+            <div class="popup2-right">
+                <a href="#section-tour" class="popup2-close">&times;</a>
+                <h2 class="heading-sec">In Summer</h2>
+                <p class="popup2-text">
+                    <strong>PROS</strong> <br> 1. Perfect for historical and architectural tours. <br> 2. Less humidity during summer. <br> <strong>CONS</strong><br> 1. Can get very hot, particularly in certain regions. <br> 2. Expect high tourist footfall.
+                </p>
+                <a href="index2.html" class="btn btn-purple">Explore</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Details for Rainy -->
+    <div class="popup3" id="popup3">
+        <div class="popup3-content">
+            <div class="popup3-left">
+                <img src="img/western-ghats.jpg" alt="tour photo" class="popup3-img">
+                <img src="img/kabini.jpg" alt="tour photo" class="popup3-img">
+            </div>
+            <div class="popup3-right">
+                <a href="#section-tour" class="popup3-close">&times;</a>
+                <h2 class="heading-sec">In Rainy Season</h2>
+                <p class="popup3-text">
+                    <strong>PROS</strong> <br> 1. Lush greenery and fresh atmosphere. <br> 2. Ideal for nature lovers and wildlife enthusiasts. <br> <strong>CONS</strong><br> 1. Possibility of floods and travel disruptions. <br> 2. Certain places are inaccessible due to heavy rain.
+                </p>
+                <a href="index2.html" class="btn btn-purple">Explore</a>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
