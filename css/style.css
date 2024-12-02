@@ -1689,3 +1689,18 @@ only screen and (hover: none) {
         padding: 10rem 0;
     }
 }
+.card-picture-wonderla {
+    background-image: url('images/wonderla.jpg');
+}
+
+.card-picture-food {
+    background-image: url('images/food.jpg');
+}
+
+.card-picture-dance {
+    background-image: url('images/dance.jpg');
+}
+
+.card-picture-heritage {
+    background-image: url('images/heritage.jpg');
+}
