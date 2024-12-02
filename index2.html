@@ -319,4 +319,52 @@
 
 <!-- Historical Sites -->
 <a href="index3.html#heritage" class="btn btn-white">Details!</a>
+<style>
+    /* Flip Card Container Styling */
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds consistent spacing between cards */
+    margin: 20px 0; /* Adds vertical space between rows */
+}
+
+.column {
+    flex: 1 1 calc(25% - 20px); /* Ensure cards resize and fit evenly */
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+/* Flip Card Styling */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #ddd;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 10px 10px;
+    text-align: center;
+}
+
+</style>
 
