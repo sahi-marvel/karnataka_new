@@ -8,6 +8,184 @@
     <link rel="stylesheet" href="fonts/font-awesome.min.css">
     <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
 </head>
+<style>
+        /* General Body Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #121212; /* Dark theme for modern aesthetics */
+    color: #e0e0e0; /* Soft white for text */
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(90deg, #ff5733, #900c3f);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+}
+
+header .btn {
+    background-color: #c70039;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #ff5733;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Main Heading Styling */
+.main-heading {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 30px 0;
+    color: #f39c12; /* Vibrant yellow */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.subtext {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #b3b3b3;
+    margin-bottom: 50px;
+}
+
+/* Section Headings */
+.section h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 20px auto 30px;
+    color: #e74c3c; /* Rich red for standout effect */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #e74c3c;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Cards */
+.card {
+    background: linear-gradient(145deg, #1e1e1e, #292929); /* Modern 3D effect */
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #555;
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
+}
+
+.card-img:hover {
+    filter: brightness(1);
+}
+
+.card-content {
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.card-content ul {
+    margin: 15px 0 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #f39c12; /* Matching heading color */
+}
+
+.card-content ul li {
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+a, .btn {
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+a:hover, .btn:hover {
+    color: #e67e22;
+}
+
+/* Grid System */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.column {
+    flex: 1 1 300px;
+    margin: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #111;
+    text-align: center;
+    color: #bbb;
+    padding: 20px;
+    font-size: 1rem;
+    border-top: 2px solid #333;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+</style>
 <body>
     <!-- Header Section -->
     <header>
@@ -17,87 +195,15 @@
             <a href="index.html" class="btn btn-purple">Back to Main</a>
         </div>
     </header>
-    <div class="content-section">
+
     <!-- Text Section -->
-    <h1 class="main-heading">Discover the Beauty of Karnataka</h1>
-    <p class="subtext">
-        Karnataka is a land of wonders, offering everything from thrilling amusement parks like Wonderla 
-        to its rich cultural heritage, iconic cuisines, and breathtaking landscapes.
-    </p>
-    
-    <!-- Ordered Image Grid -->
-    <div class="image-grid">
-        <div class="image-card">
-            <img src="img/wonderla.jpg" alt="Wonderla" class="grid-image">
-            <p class="image-caption">Thrill & Adventure at Wonderla</p>
-        </div>
-        <div class="image-card">
-            <img src="img/masala_dosa.jpg" alt="Masala Dosa" class="grid-image">
-            <p class="image-caption">Savor the Taste of Masala Dosa</p>
-        </div>
-        <div class="image-card">
-            <img src="img/hampi.jpg" alt="Hampi" class="grid-image">
-            <p class="image-caption">Explore the Heritage of Hampi</p>
-        </div>
-        <div class="image-card">
-            <img src="img/yakshagana.jpg" alt="Yakshagana" class="grid-image">
-            <p class="image-caption">Dive into Yakshagana Dance Art</p>
-        </div>
+    <div class="content-section">
+        <h1 class="main-heading">Discover the Beauty of Karnataka</h1>
+        <p class="subtext">
+            Karnataka is a land of wonders, offering everything from thrilling amusement parks like Wonderla 
+            to its rich cultural heritage, iconic cuisines, and breathtaking landscapes.
+        </p>
     </div>
-</div>
-<style>
-    /* Styling for the Text Section */
-.main-heading {
-    font-size: 3rem; /* Large font size */
-    font-weight: bold;
-    text-align: center;
-    margin: 20px 0;
-    color: #4a4a4a;
-}
-
-.subtext {
-    font-size: 1.5rem; /* Medium-large font size */
-    text-align: center;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #676767;
-}
-
-/* Image Grid Styles */
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between grid items */
-    margin: 20px auto;
-    padding: 0 20px;
-    max-width: 1200px; /* Center align the grid */
-}
-
-.image-card {
-    text-align: center;
-    border: 2px solid #f0f0f0; /* Optional: Add border for separation */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Ensures the image doesn't spill out */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lift effect */
-    transition: transform 0.3s ease; /* Animation for hover effect */
-}
-
-.image-card:hover {
-    transform: scale(1.05); /* Zoom effect on hover */
-}
-
-.grid-image {
-    width: 100%; /* Ensures the image fits the card */
-    height: auto; /* Maintains aspect ratio */
-}
-
-.image-caption {
-    font-size: 1rem;
-    color: #555;
-    margin: 10px 0;
-}
-
-</style>
 
     <!-- Wonderla Section -->
     <section id="wonderla" class="section">
@@ -106,13 +212,18 @@
             <div class="card">
                 <img src="img/wonderla.jpg" alt="Wonderla" class="card-img">
                 <div class="card-content">
-                    <p>Wonderla Amusement Park is one of the largest amusement parks in India. With thrilling rides, water slides, and wave pools, it's the perfect destination for family and friends.</p>
+                    <p>Wonderla Amusement Park offers an exhilarating mix of thrill rides, water attractions, and family-friendly activities, making it one of India's most popular destinations for entertainment and adventure.</p>
                     <ul>
                         <li>India's Premier Amusement Park</li>
-                        <li>Over 60 Rides</li>
-                        <li>Wave Pools & Water Slides</li>
-                        <li>Thrilling Attractions</li>
+                        <li>Over 60 Thrilling and Family Rides</li>
+                        <li>Wave Pools, Lazy Rivers, and Rain Disco</li>
+                        <li>India's First Reverse-Looping Roller Coaster</li>
+                        <li>State-of-the-Art Safety and Hygiene Standards</li>
+                        <li>High-tech 3D and Virtual Reality Experiences</li>
+                        <li>Extensive Food Courts Serving Global Cuisines</li>
+                        <li>Eco-friendly Initiatives with Solar Energy Usage</li>
                     </ul>
+                    <p>Whether you're seeking adrenaline-pumping adventures or a leisurely day out with family, Wonderla has something for everyone!</p>
                 </div>
             </div>
         </div>
@@ -127,45 +238,28 @@
                     <div class="card">
                         <img src="img/masala_dosa.jpg" alt="Masala Dosa" class="card-img">
                         <h3>Masala Dosa</h3>
-                        <p>A crispy rice pancake filled with spiced potato, served with chutney and sambhar.</p>
-                      
+                        <p>A crispy rice pancake filled with spiced potato, served with coconut chutney and sambhar. It's a quintessential South Indian breakfast dish and a favorite worldwide.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/ragi_mudde.jpg" alt="Ragi Mudde" class="card-img">
                         <h3>Ragi Mudde</h3>
-                        <p>Finger millet balls served with spicy curry, a nutritious Karnataka staple.</p>
+                        <p>Finger millet balls served with spicy curry. Packed with nutrients, this dish is a staple food of Karnataka, especially popular in rural areas.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/mysore_pak.jpg" alt="Mysore Pak" class="card-img">
                         <h3>Mysore Pak</h3>
-                        <p>A sweet treat made of ghee, sugar, and gram flour, originating from Mysore.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Traditional Dances Section -->
-    <section id="traditional-dances" class="section">
-        <div class="container">
-            <h2>Traditional Dances of Karnataka</h2>
-            <div class="row">
-                <div class="column">
-                    <div class="card">
-                        <img src="img/yakshagana.jpg" alt="Yakshagana" class="card-img">
-                        <h3>Yakshagana</h3>
-                        <p>A vibrant folk theatre combining dance, music, and dialogue.</p>
+                        <p>A traditional sweet made of ghee, sugar, and gram flour. Originating in the royal kitchens of Mysore, it's known for its rich, melt-in-your-mouth texture.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <img src="img/dollu_kunitha.jpg" alt="Dollu Kunitha" class="card-img">
-                        <h3>Dollu Kunitha</h3>
-                        <p>A drum-based dance performed by men in a group.</p>
+                        <img src="img/coorg_pork_curry.jpg" alt="Coorg Pork Curry" class="card-img">
+                        <h3>Coorg Pork Curry</h3>
+                        <p>A flavorful dish made with succulent pork, aromatic spices, and curry leaves, reflecting the unique culinary traditions of the Coorg region.</p>
                     </div>
                 </div>
             </div>
@@ -181,145 +275,19 @@
                     <div class="card">
                         <img src="img/hampi.jpg" alt="Hampi" class="card-img">
                         <h3>Hampi</h3>
-                        <p>A UNESCO World Heritage Site, known for its ancient temples and ruins.</p>
+                        <p>A UNESCO World Heritage Site, known for its ancient temples, grandiose monuments, and the breathtaking ruins of the Vijayanagara Empire.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/badami_caves.jpg" alt="Badami Caves" class="card-img">
                         <h3>Badami Caves</h3>
-                        <p>Rock-cut temples with intricate carvings from the 6th century.</p>
-                       
+                        <p>Renowned for its rock-cut temples from the 6th century, showcasing exquisite carvings and sculptures of Hindu deities.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <style>
-        /* General Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a; /* Dark background for high contrast */
-    color: #ffffff; /* White text for contrast */
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header Styling */
-header {
-    background: linear-gradient(45deg, #ff5733, #c70039); /* Bold gradient */
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-}
-
-header h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin: 0;
-}
-
-header .btn {
-    display: inline-block;
-    background-color: #900c3f;
-    color: #fff;
-    padding: 10px 20px;
-    margin-top: 10px;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-header .btn:hover {
-    background-color: #ff5733;
-}
-
-/* Section Headings */
-.section h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 20px 0;
-    color: #f1c40f; /* Bright yellow for headings */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-/* Image Cards */
-.card {
-    background-color: #333333; /* Dark card background */
-    border: 1px solid #444444; /* Subtle border */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    margin: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.8);
-}
-
-.card-img {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #555;
-}
-
-.card-content {
-    padding: 15px;
-    color: #ddd;
-    font-size: 1.1rem;
-    text-align: justify;
-}
-
-/* Links and Buttons */
-a {
-    color: #1abc9c;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #16a085;
-}
-
-/* Grid and Layout */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.column {
-    flex: 1;
-    max-width: 300px;
-    padding: 10px;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #111;
-    color: #aaa;
-    font-size: 0.9rem;
-    border-top: 2px solid #444;
-}
-
-footer p {
-    margin: 0;
-}
-
-        
-    </stle>
 
     <!-- Footer -->
     <footer>
