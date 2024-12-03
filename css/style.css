@@ -1,3 +1,18 @@
+.image-collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between images */
+    margin: 15px 0;
+}
+
+.collage-img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    object-fit: cover; /* Ensure the image fits nicely */
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a polished look */
+}
 .testimonial {
     width: 50%;
     background-color: white;
