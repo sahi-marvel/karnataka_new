@@ -1731,6 +1731,35 @@ only screen and (hover: none) {
     box-sizing: border-box;
     margin: 10px;
 }
+/* Flip Card - Front Picture Styles */
+.card-picture {
+    height: 200px; /* Adjust as needed */
+    background-size: cover; /* Ensure the image covers the div */
+    background-position: center; /* Center the image */
+    border-radius: 10px 10px 0 0; /* Match card radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add subtle shadow for a lifted effect */
+}
+
+/* Specific Card Picture for Wonderla */
+.card-picture-wonderla {
+    background-image: url('img/wonderla.jpg'); /* Replace with the correct path */
+}
+
+/* Specific Card Picture for Karnataka Cuisine */
+.card-picture-food {
+    background-image: url('img/masala_dosa.jpg'); /* Replace with the correct path */
+}
+
+/* Specific Card Picture for Traditional Dances */
+.card-picture-dance {
+    background-image: url('img/yakshagana.jpg'); /* Replace with the correct path */
+}
+
+/* Specific Card Picture for Heritage Sites */
+.card-picture-heritage {
+    background-image: url('img/hampi.jpg'); /* Replace with the correct path */
+}
+
 
 /* Flip Card Styling */
 .card {
